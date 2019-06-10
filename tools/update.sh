@@ -1,4 +1,13 @@
 #!/bin/bash
+echo '###########################################################';
+echo '';
+echo 'Moving to NVTs repository directory';
+echo '';
+echo '###########################################################';
+DIRECTORY=`dirname $0`;
+cd $DIRECTORY;
+cd ../;
+echo "cd $PWD";
 
 echo '###########################################################';
 echo '';
