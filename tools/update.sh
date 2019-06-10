@@ -33,11 +33,11 @@ echo 'Adding updated NVTs to git, and pushing to repository';
 echo '';
 echo '###########################################################';
 GIT_ADD_COMMAND="git add .";
-GIT_COMMIT_COMMAND="git commit -m \"Update received from Greenbone Community feed\"";
+GIT_COMMIT_COMMAND='git commit -m "Update received from Greenbone Community feed"';
 GIT_PUSH_COMMAND="git push -q";
 echo $GIT_ADD_COMMAND;
 echo $GIT_COMMIT_COMMAND;
 echo $GIT_PUSH_COMMAND;
-$GIT_ADD_COMMAND;
-$GIT_COMMIT_COMMAND;
-$GIT_PUSH_COMMAND;
+git add .
+git commit -m "Update received from Greenbone Community feed";
+git push -q
