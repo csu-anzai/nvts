@@ -1,6 +1,5 @@
 ###############################################################################
 # OpenVAS Vulnerability Test
-# $Id: gb_wanscam_onvif_dos_vuln.nasl 13994 2019-03-05 12:23:37Z cfischer $
 #
 # Wanscam HW0021 ONVIF Denial of Service Vulnerability
 #
@@ -28,8 +27,8 @@
 if(description)
 {
   script_oid("1.3.6.1.4.1.25623.1.0.113222");
-  script_version("$Revision: 13994 $");
-  script_tag(name:"last_modification", value:"$Date: 2019-03-05 13:23:37 +0100 (Tue, 05 Mar 2019) $");
+  script_version("2019-06-11T10:18:21+0000");
+  script_tag(name:"last_modification", value:"2019-06-11 10:18:21 +0000 (Tue, 11 Jun 2019)");
   script_tag(name:"creation_date", value:"2018-07-03 11:23:57 +0200 (Tue, 03 Jul 2018)");
   script_tag(name:"cvss_base", value:"4.3");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:M/Au:N/C:N/I:N/A:P");
@@ -64,7 +63,7 @@ if(description)
 
   script_tag(name:"affected", value:"Wanscam HW0021. Other devices using ONVIF may be affected, too.");
 
-  script_tag(name:"solution", value:"No known solution is available as of 14th February, 2019.
+  script_tag(name:"solution", value:"No known solution is available as of 11th June, 2019.
   Information regarding this issue will be updated once solution details are available.");
 
   script_xref(name:"URL", value:"https://hackinganarchy.wordpress.com/2018/09/20/cve-2018-13111/");
