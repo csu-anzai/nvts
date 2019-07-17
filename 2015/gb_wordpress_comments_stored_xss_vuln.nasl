@@ -1,6 +1,5 @@
 ###############################################################################
 # OpenVAS Vulnerability Test
-# $Id: gb_wordpress_comments_stored_xss_vuln.nasl 13659 2019-02-14 08:34:21Z cfischer $
 #
 # Wordpress Comments Stored Cross Site Scripting Vulnerability
 #
@@ -29,11 +28,11 @@ CPE = "cpe:/a:wordpress:wordpress";
 if(description)
 {
   script_oid("1.3.6.1.4.1.25623.1.0.805176");
-  script_version("$Revision: 13659 $");
+  script_version("2019-07-05T10:41:31+0000");
   script_cve_id("CVE-2015-3440");
   script_tag(name:"cvss_base", value:"4.3");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:M/Au:N/C:N/I:P/A:N");
-  script_tag(name:"last_modification", value:"$Date: 2019-02-14 09:34:21 +0100 (Thu, 14 Feb 2019) $");
+  script_tag(name:"last_modification", value:"2019-07-05 10:41:31 +0000 (Fri, 05 Jul 2019)");
   script_tag(name:"creation_date", value:"2015-05-04 18:50:27 +0530 (Mon, 04 May 2015)");
   script_tag(name:"qod_type", value:"remote_vul");
   script_name("Wordpress Comments Stored Cross Site Scripting Vulnerability");
@@ -69,7 +68,6 @@ if(description)
   script_mandatory_keys("wordpress/installed");
   script_require_ports("Services/www", 80);
 
-  script_xref(name:"URL", value:"https://wordpress.org");
   exit(0);
 }
 
