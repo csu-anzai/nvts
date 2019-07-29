@@ -28,8 +28,8 @@ CPE = "cpe:/a:microsoft:iis";
 if(description)
 {
   script_oid("1.3.6.1.4.1.25623.1.0.10585");
-  script_version("2019-04-29T15:08:03+0000");
-  script_tag(name:"last_modification", value:"2019-04-29 15:08:03 +0000 (Mon, 29 Apr 2019)");
+  script_version("2019-07-26T13:41:14+0000");
+  script_tag(name:"last_modification", value:"2019-07-26 13:41:14 +0000 (Fri, 26 Jul 2019)");
   script_tag(name:"creation_date", value:"2005-11-03 14:08:04 +0100 (Thu, 03 Nov 2005)");
   script_bugtraq_id(2144);
   script_tag(name:"cvss_base", value:"5.0");
@@ -84,10 +84,9 @@ foreach filename( filenames ) {
 
   url = "/_vti_bin/" + filename;
   req = string("POST ", url, " HTTP/1.1\r\n",
-               "Date: Thur, 25 Dec 2000 12:31:00 GMT\r\n",
                "MIME-Version: 1.0\r\n",
                "User-Agent: MSFrontPage/4.0\r\n",
-               "Host: %25OPENVAS%25\r\n",
+               "Host: %25VTTEST%25\r\n",
                "Accept: auth/sicily\r\n",
                "Content-Length: 5058\r\n",
                "Content-Type: application/x-www-form-urlencoded\r\n",
