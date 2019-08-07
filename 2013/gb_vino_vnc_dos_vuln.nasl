@@ -1,6 +1,5 @@
 ###############################################################################
 # OpenVAS Vulnerability Test
-# $Id: gb_vino_vnc_dos_vuln.nasl 11883 2018-10-12 13:31:09Z cfischer $
 #
 # Vino VNC Server Remote Denial Of Service Vulnerability
 #
@@ -27,12 +26,12 @@
 if(description)
 {
   script_oid("1.3.6.1.4.1.25623.1.0.802061");
-  script_version("$Revision: 11883 $");
+  script_version("2019-08-06T11:17:21+0000");
   script_bugtraq_id(62443);
   script_cve_id("CVE-2013-5745");
   script_tag(name:"cvss_base", value:"7.1");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:M/Au:N/C:N/I:N/A:C");
-  script_tag(name:"last_modification", value:"$Date: 2018-10-12 15:31:09 +0200 (Fri, 12 Oct 2018) $");
+  script_tag(name:"last_modification", value:"2019-08-06 11:17:21 +0000 (Tue, 06 Aug 2019)");
   script_tag(name:"creation_date", value:"2013-09-27 16:12:45 +0530 (Fri, 27 Sep 2013)");
   script_name("Vino VNC Server Remote Denial Of Service Vulnerability");
 
@@ -45,7 +44,7 @@ vulnerability.");
 version 3.3 and sends malformed data during the authentication selection stage
 of the authentication process.");
   script_tag(name:"affected", value:"Vino VNC Server version 3.7.3 and prior.");
-  script_tag(name:"impact", value:"Successful exploitation will allow attacker to to cause a denial of service.
+  script_tag(name:"impact", value:"Successful exploitation will allow attacker to cause a denial of service.
 Additionally, after the failure condition has occurred, the log file
 (~/.xsession-errors) grows quickly.");
 

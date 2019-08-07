@@ -1,6 +1,5 @@
 ###############################################################################
 # OpenVAS Vulnerability Test
-# $Id: gb_goldenftp_pass_cmd_bof_vuln.nasl 13499 2019-02-06 12:55:20Z cfischer $
 #
 # Golden FTP PASS Command Buffer Overflow Vulnerability
 #
@@ -27,8 +26,8 @@
 if(description)
 {
   script_oid("1.3.6.1.4.1.25623.1.0.802024");
-  script_version("$Revision: 13499 $");
-  script_tag(name:"last_modification", value:"$Date: 2019-02-06 13:55:20 +0100 (Wed, 06 Feb 2019) $");
+  script_version("2019-08-06T11:17:21+0000");
+  script_tag(name:"last_modification", value:"2019-08-06 11:17:21 +0000 (Tue, 06 Aug 2019)");
   script_tag(name:"creation_date", value:"2011-06-13 15:28:04 +0200 (Mon, 13 Jun 2011)");
   script_cve_id("CVE-2006-6576");
   script_bugtraq_id(45957, 45924);
@@ -46,7 +45,7 @@ if(description)
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/17355");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/16036");
 
-  script_tag(name:"impact", value:"Successful exploitation will allow remote attackers to to execute
+  script_tag(name:"impact", value:"Successful exploitation will allow remote attackers to execute
   arbitrary code on the system or cause the application to crash.");
 
   script_tag(name:"affected", value:"Golden FTP Server Version 4.70, other versions may also be

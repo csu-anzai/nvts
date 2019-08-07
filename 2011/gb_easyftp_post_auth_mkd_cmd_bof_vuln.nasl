@@ -1,6 +1,5 @@
 ###############################################################################
 # OpenVAS Vulnerability Test
-# $Id: gb_easyftp_post_auth_mkd_cmd_bof_vuln.nasl 13499 2019-02-06 12:55:20Z cfischer $
 #
 # Easy~FTP Server POST Auth 'MKD' Command Buffer Overflow Vulnerability
 #
@@ -27,8 +26,8 @@
 if(description)
 {
   script_oid("1.3.6.1.4.1.25623.1.0.802023");
-  script_version("$Revision: 13499 $");
-  script_tag(name:"last_modification", value:"$Date: 2019-02-06 13:55:20 +0100 (Wed, 06 Feb 2019) $");
+  script_version("2019-08-06T11:17:21+0000");
+  script_tag(name:"last_modification", value:"2019-08-06 11:17:21 +0000 (Tue, 06 Aug 2019)");
   script_tag(name:"creation_date", value:"2011-06-07 13:29:28 +0200 (Tue, 07 Jun 2011)");
   script_tag(name:"cvss_base", value:"7.5");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:P/A:P");
@@ -44,7 +43,7 @@ if(description)
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/17354/");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/view/101905");
 
-  script_tag(name:"impact", value:"Successful exploitation will allow attackers to to execute
+  script_tag(name:"impact", value:"Successful exploitation will allow attackers to execute
   arbitrary code and failed attempt can lead to application crash.");
 
   script_tag(name:"affected", value:"Easy FTP Server Version 1.7.0.11 and prior.");
