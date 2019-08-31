@@ -27,8 +27,8 @@
 if(description)
 {
   script_oid("1.3.6.1.4.1.25623.1.0.113222");
-  script_version("2019-07-04T09:08:48+0000");
-  script_tag(name:"last_modification", value:"2019-07-04 09:08:48 +0000 (Thu, 04 Jul 2019)");
+  script_version("2019-08-30T12:32:13+0000");
+  script_tag(name:"last_modification", value:"2019-08-30 12:32:13 +0000 (Fri, 30 Aug 2019)");
   script_tag(name:"creation_date", value:"2018-07-03 11:23:57 +0200 (Tue, 03 Jul 2018)");
   script_tag(name:"cvss_base", value:"4.3");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:M/Au:N/C:N/I:N/A:P");
@@ -47,13 +47,15 @@ if(description)
   script_family("Denial of Service");
   script_dependencies("find_service.nasl", "http_version.nasl");
   script_require_ports("Services/www", 8080);
+  script_exclude_keys("Settings/disable_cgi_scanning");
 
   script_tag(name:"summary", value:"Wanscam HW0021 devices are prone to a partial Denial of Service vulnerability.
 
   CAUTION: If the device is vulnerable, the ONVIF service will crash during the test.
   A manual restart of the service or the device will be necessary.");
 
-  script_tag(name:"vuldetect", value:"Checks if a vulnerable version is present on the target host.");
+  script_tag(name:"vuldetect", value:"Sends a crafted request via HTTP POST and checks whether
+  the remote host stops responding.");
 
   script_tag(name:"insight", value:"An invalid SOAP-request to the ONVIF-SOAP interface will cause the ONVIF
   service to crash.");
